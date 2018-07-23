@@ -15,9 +15,11 @@ npm run dev
 npm run build
 ```
 ##PPT
-![Alt text](./src/asset/1.png)
-![Alt text](./src/asset/21.png)
-![Alt text](./src/asset/3.png)
-![Alt text](./src/asset/44.png)
 
+<figure class="third">
+    <img src="./src/asset/1.png">
+    <img src="./src/asset/21.png">
+    <img src="./src/asset/3.png">
+    <img src="./src/asset/44.png">
+</figure>
 
