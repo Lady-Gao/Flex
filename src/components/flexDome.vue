@@ -1,6 +1,5 @@
 <template>
     <div class="content" ref="content">
-        
        <ol  v-if="data.ulClass=='alignItems'"   :class="data.ulClass" ref="ul">
             <li class="blue" style="height:50px">0</li>
             <li class="blue" style="height:150px">1</li>
@@ -45,6 +44,7 @@
         </ol>
         <ol class="listUl">
             <li><el-button size="small" @click='addBtn' :disabled="data.ulClass=='alignItems'">添加子元素</el-button></li>
+            <span v-if="data.ulClass=='alignContent'">如果项目只有一根轴线，该属性不起作用</span>
         </ol>
         <div class="info">
             <h2>{{data.ulClass}}</h2>
@@ -143,6 +143,7 @@ export default{
                 this.data.radioArr.forEach((item,idx)=>{
                     this.liText.push({name:item,text:arr[idx]})
                 })
+          
                 break;
            
         }
