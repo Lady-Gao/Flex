@@ -44,7 +44,7 @@
         </ol>
         <ol class="listUl">
             <li><el-button size="small" @click='addBtn' :disabled="data.ulClass=='alignItems'">添加子元素</el-button></li>
-            <span v-if="data.ulClass=='alignContent'">如果项目只有一根轴线，该属性不起作用</span>
+            <span v-if="data.ulClass=='alignContent'">如果项目只有一根轴线，该属性不起作用,使用flex-flow :row wrap</span>
         </ol>
         <div class="info">
             <h2>{{data.ulClass}}</h2>
@@ -165,8 +165,11 @@ export default{
     height:100%;
     padding:20px;
     box-sizing: border-box;
+  
    ol .blue{
        background-color: rgb(22, 101, 153);
+       
+       
    }
 }
 
@@ -186,7 +189,7 @@ export default{
 .alignItems{    align-items:flex-start  }
 
 /*align-content: flex-start | flex-end | center | space-between | space-around | stretch;*/
-.alignContent{       align-content: flex-start       }
+.alignContent{     align-content: flex-start       }
 
 //z子盒子
 
